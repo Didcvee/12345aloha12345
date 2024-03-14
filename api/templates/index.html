@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forecast App</title>
+</head>
+<body>
+    <h1>Forecast App</h1>
+    <form method="POST" action="/predict" enctype="multipart/form-data">
+        <label for="cluster">Select Cluster:</label>
+        <select name="cluster">
+            <option value="1">Cluster 1</option>
+            <option value="2">Cluster 2</option>
+            <option value="3">Cluster 3</option>
+        </select>
+        <br><br>
+        <label for="period">Select Forecast Period:</label>
+        <select name="period">
+            <option value="1">1 year</option>
+            <option value="2">2 years</option>
+            <option value="3">3 years</option>
+        </select>
+        <br><br>
+        <input type="file" name="csv_file">
+        <br><br>
+        <input type="submit" value="Forecast">
+    </form>
+</body>
+</html>

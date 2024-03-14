@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+   <body>
+      <h1>Загрузка CSV-файла</h1>
+      <form action="/clusterize" method="POST" enctype="multipart/form-data">
+         <input type="file" name="file">
+         <br>
+         <label for="clusters">Количество кластеров:</label>
+         <input type="number" id="clusters" name="clusters" min="1" max="10" value="2">
+         <br>
+         <input type="submit" value="Кластеризовать">
+      </form>
+   </body>
+</html>
